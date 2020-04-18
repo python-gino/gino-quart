@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "gino-quart"
+version = "0.1.0"
+description = "An extension for GINO to integrate with Quart"
+license = "BSD-3-Clause"
+authors = ["Tony Wang <wwwjfy@gmail.com>"]
+maintainers = []
+readme = "README.md"
+homepage = "https://github.com/python-gino/gino-quart"
+repository = "https://github.com/python-gino/gino-quart"
+documentation = "https://python-gino.org/docs/"
+keywords = ["sqlalchemy", "python3", "quart", "gino"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+gino = { version = "^1.0.0rc2", allow-prereleases = true }
+quart = "^0.11.5"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+# tests
+pytest = "^5.3.2"
+pytest-asyncio = "^0.10.0"
+pytest-cov = "^2.8.1"
+
+[tool.poetry.plugins."gino.extensions"]
+"quart" = "gino_quart"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
