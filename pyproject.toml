@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gino-quart"
-version = "0.1.0"
+version = "0.1.1b0"
 description = "An extension for GINO to integrate with Quart"
 license = "BSD-3-Clause"
 authors = ["Tony Wang <wwwjfy@gmail.com>"]
