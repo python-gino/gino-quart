@@ -4,7 +4,7 @@
 
 ## Introduction
 
-An extension for GINO to support [quart](https://gitlab.com/pgjones/quart) server.
+An extension for [GINO](https://github.com/python-gino/gino) to support [quart](https://gitlab.com/pgjones/quart) server.
 
 ## Usage
 
@@ -64,3 +64,9 @@ You're welcome to contribute to this project. It's really appreciated. Please [f
 - Dependency management is done via [poetry](https://python-poetry.org/)
 - Pull request for new features _must_ include the appropriate tests integrated in `tests/test_gino_quart.py`
 - You should format your code. Recommended is [black](https://black.readthedocs.io/en/stable/)
+
+## Attribution
+
+The license holder of this extension is [Tony Wang](https://github.com/python-gino/gino-quart/blob/master/LICENSE).
+
+This project is an extension to [GINO](https://github.com/python-gino/gino) and part of the [python-gino community](https://github.com/python-gino).
