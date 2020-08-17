@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gino-quart"
-version = "0.1.1b0"
+version = "0.1.1b1"
 description = "An extension for GINO to integrate with Quart"
 license = "BSD-3-Clause"
 authors = ["Tony Wang <wwwjfy@gmail.com>"]
@@ -23,7 +23,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.7"
 gino = { version = "^1.0.0rc2", allow-prereleases = true }
-quart = "^0.11.5"
+quart = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

@@ -362,7 +362,7 @@ description = "A Python ASGI web microframework with the same API as Flask"
 name = "quart"
 optional = false
 python-versions = ">=3.7.0"
-version = "0.11.5"
+version = "0.13.0"
 
 [package.dependencies]
 aiofiles = "*"
@@ -482,7 +482,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "58c4685e5508700ff37b7b1e8d4c0e4cd6ada50c53974df2271bd922977dbd16"
+content-hash = "6ded9cd390132826f85ee1e9030473096be6e88963465b3da41e071947768edf"
 lock-version = "1.0"
 python-versions = "^3.7"
 
@@ -693,8 +693,8 @@ pytest-cov = [
     {file = "pytest_cov-2.10.1-py2.py3-none-any.whl", hash = "sha256:45ec2d5182f89a81fc3eb29e3d1ed3113b9e9a873bcddb2a71faaab066110191"},
 ]
 quart = [
-    {file = "Quart-0.11.5-py3-none-any.whl", hash = "sha256:187427d1a2d7fed20dcb825dddbe20fd971efd7ec413639f95d2e28ff59a0cb1"},
-    {file = "Quart-0.11.5.tar.gz", hash = "sha256:bd93650fa856dcfbc3890952ab3ca53f7755ab506d453a209db63713eceeceda"},
+    {file = "Quart-0.13.0-py3-none-any.whl", hash = "sha256:b0b5148ab57b775ed173ed9e9897f3b13d2f54e39cfadf4a396f442ec96bb57f"},
+    {file = "Quart-0.13.0.tar.gz", hash = "sha256:b2a8cf0cf1b0129cd981ece9ae304ad977d1dcaec92952303bd1852508717d44"},
 ]
 regex = [
     {file = "regex-2020.7.14-cp27-cp27m-win32.whl", hash = "sha256:e46d13f38cfcbb79bfdb2964b0fe12561fe633caf964a77a5f8d4e45fe5d2ef7"},
