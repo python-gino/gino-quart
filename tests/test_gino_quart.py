@@ -33,6 +33,7 @@ async def _app(config):
     )
 
     db = Gino(app)
+    await app.startup()
 
     class User(db.Model):
         __tablename__ = "gino_users"
