@@ -97,8 +97,8 @@ class Gino(_Gino):
                     del request.connection
                 return response
 
-        @app.before_first_request
-        async def before_first_request():
+        @app.before_serving
+        async def before_serving():
             dsn = app.config.get("DB_DSN")
             if not dsn:
                 dsn = URL(
@@ -119,6 +119,10 @@ class Gino(_Gino):
                 loop=asyncio.get_event_loop(),
                 **app.config.setdefault("DB_KWARGS", dict()),
             )
+
+        @app.after_serving
+        async def after_serving():
+            await self.pop_bind().close()
 
     async def first_or_404(self, *args, **kwargs):
         rv = await self.first(*args, **kwargs)
