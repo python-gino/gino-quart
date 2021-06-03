@@ -23,7 +23,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.7"
 gino = { version = "^1.0.0rc2", allow-prereleases = true }
-quart = ">=0.13,<0.15"
+quart = ">=0.13,<0.16"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b2"
