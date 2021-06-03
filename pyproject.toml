@@ -26,7 +26,7 @@ gino = { version = "^1.0.0rc2", allow-prereleases = true }
 quart = ">=0.13,<0.15"
 
 [tool.poetry.dev-dependencies]
-black = "^21.4b2"
+black = "^21.5b2"
 
 # tests
 pytest = "^6.2.4"
