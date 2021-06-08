@@ -4,7 +4,7 @@ from gino.api import Gino as _Gino, GinoExecutor as _Executor
 from gino.engine import GinoConnection as _Connection, GinoEngine as _Engine
 from gino.strategies import GinoStrategy
 from quart import Quart, request
-from quart.exceptions import NotFound
+from werkzeug.exceptions import NotFound
 from sqlalchemy.engine.url import URL
 
 

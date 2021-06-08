@@ -24,6 +24,7 @@ classifiers = [
 python = "^3.7"
 gino = { version = "^1.0.0rc2", allow-prereleases = true }
 quart = ">=0.13,<0.15"
+Werkzeug = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b2"

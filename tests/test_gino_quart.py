@@ -6,7 +6,7 @@ import gino
 import pytest
 from gino.ext.quart import Gino
 from quart import Quart, jsonify, request, websocket
-from quart.exceptions import NotFound
+from werkzeug.exceptions import NotFound
 
 DB_ARGS = dict(
     host=os.getenv("DB_HOST", "localhost"),
