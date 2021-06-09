@@ -6,7 +6,7 @@ import gino
 import pytest
 from gino.ext.quart import Gino
 from quart import Quart, jsonify, request, websocket
-from werkzeug.exceptions import NotFound
+from werkzeug.exceptions import NotFound, HTTPException
 
 DB_ARGS = dict(
     host=os.getenv("DB_HOST", "localhost"),
@@ -64,7 +64,13 @@ async def _app(config):
     @app.route("/users/<int:uid>")
     async def get_user(uid):
         method = request.args.get("method")
-        return jsonify(await _get_user(request, uid, method))
+        try:
+            return await _get_user(request, uid, method)
+        except HTTPException as e:
+            print(e.get_response())
+            return e.get_response()
+        # user = await _get_user(request, uid, method)
+        return jsonify(user)
 
     async def _add_user(ctx, nickname: str) -> dict:
         u = await User.create(nickname=nickname)
@@ -156,7 +162,7 @@ async def app_dsn():
 async def _test_index_returns_200(app):
     response = await app.test_client().get("/")
     assert response.status_code == 200
-    assert await response.get_data(raw=False) == "Hello, world!"
+    assert await response.get_data(as_text = True) == "Hello, world!"
 
 
 async def test_index_returns_200(app):
