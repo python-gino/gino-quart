@@ -65,6 +65,10 @@ You're welcome to contribute to this project. It's really appreciated. Please [f
 - Pull request for new features _must_ include the appropriate tests integrated in `tests/test_gino_quart.py`
 - You should format your code. Recommended is [black](https://black.readthedocs.io/en/stable/)
 
+## Older Quart Versions
+
+`gino-quart` requires a quart version higher or equal to quart `0.15.1` after the 1.1.2 release. This is caused by multiple breaking changes with, amongst other things, exception handling. You can still use `gino-quart` `0.1.1b5` for older version.
+
 ## Attribution
 
 The license holder of this extension is [Tony Wang](https://github.com/python-gino/gino-quart/blob/master/LICENSE).
