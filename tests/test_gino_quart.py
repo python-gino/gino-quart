@@ -65,12 +65,9 @@ async def _app(config):
     async def get_user(uid):
         method = request.args.get("method")
         try:
-            return await _get_user(request, uid, method)
+            return jsonify(await _get_user(request, uid, method))
         except HTTPException as e:
-            print(e.get_response())
             return e.get_response()
-        # user = await _get_user(request, uid, method)
-        return jsonify(user)
 
     async def _add_user(ctx, nickname: str) -> dict:
         u = await User.create(nickname=nickname)
