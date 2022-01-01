@@ -448,21 +448,22 @@ testing = ["fields", "hunter", "process-tests", "six", "pytest-xdist", "virtuale
 
 [[package]]
 name = "quart"
-version = "0.15.1"
+version = "0.16.2"
 description = "A Python ASGI web microframework with the same API as Flask"
 category = "main"
 optional = false
-python-versions = ">=3.7.0"
+python-versions = ">=3.7"
 
 [package.dependencies]
 aiofiles = "*"
 blinker = "*"
 click = "*"
 hypercorn = ">=0.11.2"
+importlib_metadata = {version = "*", markers = "python_version < \"3.8\""}
 itsdangerous = "*"
 jinja2 = "*"
 toml = "*"
-typing-extensions = {version = "*", markers = "python_version < \"3.8\""}
+typing_extensions = {version = "*", markers = "python_version < \"3.8\""}
 werkzeug = ">=2.0.0"
 
 [package.extras]
@@ -565,7 +566,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "4292be92176f624e1ce06b8fac3fc68df36fdee2221aa0c2398918d07e4f05d9"
+content-hash = "54505d866135ba1fea46a97d1ecf599aa940d28e8071d6d49545a65673f966eb"
 
 [metadata.files]
 aiofiles = [
@@ -902,8 +903,8 @@ pytest-cov = [
     {file = "pytest_cov-3.0.0-py3-none-any.whl", hash = "sha256:578d5d15ac4a25e5f961c938b85a05b09fdaae9deef3bb6de9a6e766622ca7a6"},
 ]
 quart = [
-    {file = "Quart-0.15.1-py3-none-any.whl", hash = "sha256:f35134fb1d81af61624e6d89bca33cd611dcedce2dc4e291f527ab04395f4e1a"},
-    {file = "Quart-0.15.1.tar.gz", hash = "sha256:f80c91d1e0588662483e22dd9c368a5778886b62e128c5399d2cc1b1898482cf"},
+    {file = "Quart-0.16.2-py3-none-any.whl", hash = "sha256:c1bcc4989c7e0b6c3301df10b6285c09ee0a1d75fa4cebd936f0d17312294e36"},
+    {file = "Quart-0.16.2.tar.gz", hash = "sha256:356f4fd795fbf5a7a97bdeb7ca908b5051d0e6e4c0499b2b7c30b743a6938a7e"},
 ]
 regex = [
     {file = "regex-2021.4.4-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:619d71c59a78b84d7f18891fe914446d07edd48dc8328c8e149cbe0929b4e000"},
