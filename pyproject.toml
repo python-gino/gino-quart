@@ -30,7 +30,7 @@ Quart = ">=0.15.1,<0.17.0"
 black = "^22.1"
 
 # tests
-pytest = "^6.2.5"
+pytest = "^7.0.1"
 pytest-asyncio = "^0.17.2"
 pytest-cov = "^3.0.0"
 
