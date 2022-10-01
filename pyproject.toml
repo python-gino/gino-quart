@@ -32,7 +32,7 @@ black = "^22.1"
 # tests
 pytest = "^7.0.1"
 pytest-asyncio = "^0.18.1"
-pytest-cov = "^3.0.0"
+pytest-cov = "^4.0.0"
 
 [tool.poetry.plugins."gino.extensions"]
 "quart" = "gino_quart"
