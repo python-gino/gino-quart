@@ -27,7 +27,7 @@ Werkzeug = "^2.0.1"
 Quart = ">=0.15.1,<0.17.0"
 
 [tool.poetry.dev-dependencies]
-black = "^22.1"
+black = "^22.10"
 
 # tests
 pytest = "^7.0.1"
